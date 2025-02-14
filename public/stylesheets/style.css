@@ -1,0 +1,109 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    background: gray;
+    }
+    .todo-container {
+       
+    color: rgb(17, 6, 6);
+    position: absolute;
+    top:60%;
+    left: 50%;
+    padding: 20px;
+    width: 600px;
+    height: 500px;
+    transform: translate(-50%,-50%);
+    background-image: url("https://static.vecteezy.com/system/resources/previews/027/192/549/non_2x/healthy-lifestyle-hand-drawn-set-collection-colorful-doodle-illustrations-with-fitness-sport-fruit-yoga-symbols-vector.jpg");
+    background-size:cover ;
+    /* background: rgba(255, 255, 255, 0.1); */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .todo {
+        width: 400px;
+        }
+        .todo-container h2 {
+        padding: 10px;
+        font-family: 'Candal', sans-serif;
+        font-size: 2em;
+        }
+        .todo-header input {
+        width: 92%;
+        border: none;
+        border-radius: 5px;
+        height: 30px;
+        font-family: 'Candal', sans-serif;
+        }
+        .todo-header button {
+        color: white;
+        border: none;
+        /* border-radius: 50%; */
+        cursor: pointer;
+        padding: 4px;
+        font-family: 'Candal', sans-serif;
+        background-color: rgb(51, 212, 100);
+        }
+        .todo-container ul {
+        list-style: none;
+        }
+        .todo-list-item {
+        padding: 5px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Candal', sans-serif;
+        background: white;
+        display: flex;
+        flex-direction: row;
+        }
+        .todo-list-item form {
+        width: 100%;
+        display: flex;
+        }
+        .todo-list-item input {
+        flex-grow: 2;
+        margin-right: 20px;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Candal', sans-serif;
+        }
+        .todo-list-item button {
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 5px;
+        font-family: 'Candal', sans-serif;
+        background-color: rgb(51, 212, 100);
+        }
+        .todo-list-item .cancel {
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 5px;
+        font-family: 'Candal', sans-serif;
+        background-color: rgb(223, 43, 43);
+        margin-left: 5px;
+        }
+        .todo-list-item div {
+        flex-grow: 2;
+        }
+        .todo-list-item .edit {
+        color : rgb(143, 233, 58);
+        margin-right: 10px;
+        cursor:pointer;
+        text-decoration: none;
+        }
+        .todo-list-item .remove {
+        color : rgb(243, 96, 96);
+        margin-right: 5px;
+        cursor:pointer;
+        text-decoration: none;
+        }

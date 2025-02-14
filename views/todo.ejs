@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    
+    <link rel="stylesheet" href="/static/stylesheets/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+<br>
+<br>
+<br>
+    <h1 align="center" style="font-size: 280%; color:black; ">Hey there,  what's stopping you?</h1>
+    <br>
+    <h2 align="center" style="font-size: 220%; color:black "> Let's make it happen</h2>
+
+
+    <div class="todo-container">
+        <h3 style="background-color: rgb(215, 172, 179); margin-bottom: 20px; font-size: 30px; padding: 10px 20px;"> Add Your To-Do</h3>
+        <div class="todo">
+        <form action="" method="POST" class="todo-header">
+        <input type="text" placeholder="  add here"  name="content">
+        <button type="submit"><span class="fas fa-plus"></span></button>
+        </form>
+        <ul class="todo-list">
+            <% todoTasks.forEach(details => { %>
+            <li class="todo-list-item">
+            <div class="todo-list-item-name"><%= details.content %></div>
+            <a href="/edit/<%= details._id %>" class="edit">
+            <span class="fas fa-edit"></span>
+            </a>
+            <a href="/remove/<%= details._id %>" class="remove">
+            <span class="fas fa-times"></span>
+            </a>
+            </li>
+            <% }) %>
+            </ul>
+        </div>
+        </div>
+
+
+</body>
+
+
+</html>
