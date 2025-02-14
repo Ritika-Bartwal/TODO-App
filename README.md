@@ -27,5 +27,5 @@ once a to do is done we can remove or delete it as well an it will also get dele
 ![image](https://github.com/user-attachments/assets/c420bc10-c8dc-4ffe-8e05-acd87cb38bdb)
 
 
-Although this a public repo, still you wont be able to copy or run the server it is connected to my DB credentials that are hidden on github.
+Although this a public repo, still you wont be able to copy or run the server it is connected to my DB credentials that i hide before uploading on GitHub.
 
